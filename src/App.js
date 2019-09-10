@@ -29,7 +29,6 @@ function App() {
         const url = `https://theaudiodb.com/api/v1/json/1/search.php?s=${artist}`;
 
         const searchData = await axios(url);
-        console.log(searchData);
 
         setInfo(searchData.data.artists[0]);
     };
